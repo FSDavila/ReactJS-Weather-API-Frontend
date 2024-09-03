@@ -1,4 +1,4 @@
-# ReactJS Frontend for Weather API integration
+# ReactJS Frontend for Weather API Integration
 
 This ReactJS application Front-End will integrate with the Back-End (e.g. [FSDavila's Python Weather API Back-End](https://github.com/FSDavila/Python-Weather-API-Backend)) to offer the user form and interface needed to consume the Weather API's services:
 
@@ -33,7 +33,7 @@ Required to have [NodeJS] installed in your machine to download dependencies for
 
 ### Execution
 
-To run the example application, import the project into your preferred IDE and install the dependencies. We use ReactJS version 18.0.0 for development, and either [Npm] version 6.13 or [Yarn] version 1.22 for installing dependencies and running the application.
+To run the example application, import the project into your preferred IDE and install the dependencies. We used ReactJS version 18.0.0 for development, and latest stable NPM version for installing dependencies and running the application.
 
 ##### Comamand lines:
 
@@ -41,14 +41,7 @@ To run the example application, import the project into your preferred IDE and i
 
     - npm install
 
-  or
-
-    - yarn
 
 **Run the application**
 
     - npm start
-
-  or
-
-    - yarn start
