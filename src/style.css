@@ -1,0 +1,789 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1009;
+    color: green;
+    border-bottom: 1px solid #0c0216;
+}
+
+a {
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: #0c0216;
+}
+a:hover {
+        color: green;
+    }
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px o;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:  25px 0;
+}
+.btn {
+    display: inline-block;
+    background: navy;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+    .btn:hover {
+        background: #0c0216;
+        color: green;
+        cursor: pointer;
+    }
+.header{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+/* -------footer------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/at-computer-std');
+
+.container-f{
+    max-width: 1170px;
+    margin:auto;
+}
+.row-f{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    width: 100%;
+   padding-top: 25px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: orange;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ff523b;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.copyright{
+    text-align: center;
+    color:#b5b5b5;
+    padding-bottom: 10px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px ;
+    display: none;
+}
+
+.menu-item {
+    border-right: 1px solid #ccc;
+    padding-right: 25px; /* ajuste o espa�amento direito conforme necess�rio */
+   
+}
+
+.menu-item-black {
+    border-right:  1px solid #ccc;
+    padding-right: 25px; /* ajuste o espa�amento direito conforme necess�rio */
+    color:white
+}
+
+    /* Define o estilo padr�o do menu dropdown */
+    .menu-item ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        padding: 5px;
+        box-shadow: 2px 8px 20px 10px rgba(0,0,0,0.2);	
+        z-index: 1;
+    }
+
+/* Define o estilo padr�o do menu dropdown */
+.menu-shadow {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    padding: 5px;
+    box-shadow: 2px 8px 20px 10px rgba(0,0,0,0.2);
+    border:solid;
+    border-color: white;
+    border-width: 1px;
+    z-index: 1;
+}
+
+    .shadow {
+	box-shadow: 2px 8px 10px 5px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	padding: 5px;	
+    }
+
+    .invert-colors {
+	background-color: black;
+	color: white
+    }
+
+    .menu-item li {
+        border-bottom: 1px solid #ccc;
+    }
+
+.menu-item-shadow {
+    border-bottom: 1px solid #fff;
+}
+
+    /* Define o estilo do link que ativa o dropdown */
+    .menu-item:hover ul {
+        display: block;
+        opacity: 0;
+        
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Define o efeito de fade */
+    .menu-item:hover ul {
+        opacity: 1;
+    }
+/*=--------- all products ---------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+/* -----single product details----- */
+.single-product{
+    margin-top: 80px;  
+}
+    .single-product .col-2 img {
+        padding: 2px;
+    }
+.single-product .col-2{
+padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Roboto Mono', Unispace;
+}
+    .single-product input {
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: 'Roboto Mono', Unispace;
+        margin-right: 10px;
+        border: 1px solid #ff523b;
+    }
+
+input:focus{
+    outline: none;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+ flex-basis: 24%;
+ cursor: pointer;
+}
+/* ------cart items------ */
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #082454;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px; 
+}
+.total-price{
+display: flex;
+justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+/* -------account-page-------- */
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+   position: absolute;
+    top: 90px;
+    transition: transform 1s;
+}
+form input{
+height: 30px;
+margin: 10px 0;
+padding: 0 10px;
+border: 1px solid #ccc;
+}
+form .btn{
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 105px;
+    border: none;
+    background: black;
+    height: 3px;
+    margin-top: 8px;
+    transform: translate(100px);
+    transition: transform 1s;
+}
+
+
+
+
+
+
+/* ------media query for menu------- */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: white;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* media query for less than 600 screen size */
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
+
+.app-container {
+  width: 100%; /* Full width of its parent */
+  padding: 0; /* Remove default padding if any */
+  margin: 0; /* Remove default margin if any */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Full width title styling */
+.app-title {
+  font-family: system-ui;
+  width: 100%; /* Full width */
+  background-color: #082454; /* Navy blue background */
+  color: white; /* White text color */
+  padding: 10px; /* Padding */
+  text-align: center; /* Center-align text */
+  font-size: 1.5rem; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+  box-sizing: border-box; /* Include padding and border in width/height */
+  display: block; /* Ensure it behaves like a block element */
+}
+
+.app-title-h2 {
+  font-size: 15px; /* Font size */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font family */
+  width: 100%; /* Full width */
+  background-color: #082454; /* Navy blue background */
+  color: white; /* White text color */
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margin */
+  box-sizing: border-box; /* Include padding and border in width/height */
+  display: block; /* Ensure it behaves like a block element */
+}
+
+/* Style for the Tabs container */
+.tabs {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Make Tabs take up remaining space */
+}
+
+/* Style for the TabList */
+.tab-list {
+  display: flex;
+  background-color: #e0e0e0;
+  border-bottom: 2px solid #ccc;
+  justify-content: flex-start; /* Align tabs to the left */
+  padding: 0; /* Remove padding if there's any */
+  margin: 0; /* Remove margin if there's any */
+}
+
+/* Style for each Tab */
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 0; /* Remove right margin to bring tabs closer */
+}
+
+/* Style for active Tab */
+.tab--selected {
+  background-color: #fff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Style for TabPanels */
+.tab-panel {
+  padding: 20px;
+  background-color: #fff;
+  border-top: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Make TabPanel take up available space */
+}
+
+/* Apply basic responsive design for smaller screens */
+@media (max-width: 768px) {
+  .tab-list {
+    flex-direction: column;
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: left;
+  justify-content: left; /* Center align items horizontally */
+  flex-wrap: wrap;
+  gap: 20px; /* Add some space between input fields */
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.input-field {
+  flex: 1;
+  flex-direction: column;
+  min-width: 200px; /* Set a minimum width for input fields */
+  max-width: 200px; /* Set a maximum width for input fields */
+  margin-bottom: 10px;
+}
+
+.input-field input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.input-fields-right .input-field {
+  min-width: 200px;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.separator {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+.separator-footer {
+  font-size: 24px;
+  font-weight: bold;
+  color: gray;
+}
+.separator-footer:hover {
+  color: white;
+}
+
+
+.weather-form-container {
+    
+    margin: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #bbb; /* Thicker border */
+    background-color: #f9f9f9;
+    box-shadow: 
+        0 4px 8px rgba(0,0,0,0.1), /* Outer shadow */
+        inset 0 4px 8px rgba(0,0,0,0.1); /* Internal (inset) shadow */
+    /* Optional: add a subtle gradient for additional visual effect */
+    background: linear-gradient(145deg, #f9f9f9, #eee);
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-report-container {
+  margin: 50px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-day-container {
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.weather-day-table-container {
+  overflow-x: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.weather-day-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.weather-day-table thead {
+  color: #082454;
+}
+
+.weather-day-table th,
+.weather-day-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.react-tabs__tab-panel {
+  display: none; /* Hide all tab panels by default */
+}
+
+.react-tabs__tab-panel--selected {
+  display: flex; /* Show only the selected tab panel */
+}
+input.glow-on-hover {
+  border: 1px solid #ccc; /* Light border for normal state */
+  padding: 8px; /* Padding inside the input */
+  border-radius: 4px; /* Rounded corners */
+}
+
+input.glow-on-hover:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="radio"],
+select,
+textarea {
+  transition: box-shadow 0.3s ease-in-out;
+  border: 1px solid #ccc; /* Default border style	 */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+select:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 5px 2px navy; /* Navy blue glow */
+  outline: none; /* Remove default outline */
+  border-color: navy; /* Optional: change border color on focus */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  width: auto; /* Adjust the size of the logo */
+  height: 50px; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between the logo and the text */
+  vertical-align: middle; /* Align the image vertically in the middle of the text */
+}
+
+.help-bubble-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.help-icon {
+  background-color: #082454;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.help-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the help text above the icon */
+  left: 50%;
+  margin-left: -100px; /* Center the help text */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.help-bubble-container:hover .help-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .weather-day-table {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .weather-day-table th,
+  .weather-day-table td {
+    padding: 4px; /* Adjust padding */
+  }
+}
