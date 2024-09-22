@@ -7,7 +7,7 @@ This ReactJS application Front-End will integrate with the Back-End (e.g. [FSDav
 - Register City ID for Token Integration  
 - Support for V2 Weather API Endpoint (From the Back-End), that can search for cities using City Name and State directly when making weather report requests
 
-[![Vercel](https://vercel.com/button)](https://your-vercel-deployment-url)
+- [![Vercel](https://vercel.com/button)](https://react-js-weather-api-frontend.vercel.app/)
 
 - ![Weather Report Screen](https://github.com/user-attachments/assets/4d2ebe9d-1226-4ab9-a965-4f9e611fb37e)
 
