@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="footer-col">
             <h4>About</h4>
             <ul>
-              <li><a href="https://github.com/FSDavila/react-weather-api-frontend">About this Project</a></li>
+              <li><a href="https://github.com/FSDavila/ReactJS-Weather-API-Frontend">About this Project</a></li>
               <li><a href="https://github.com/FSDavila/Python-Weather-API-Backend">Back-End for this App</a></li>
             </ul>
           </div>
