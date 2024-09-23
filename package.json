@@ -2,6 +2,10 @@
   "name": "react-weather-api-frontend",
   "version": "1.0.0",
   "private": true,
+  "author": "Filipe S. D'Avila",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/FSDavila",
+  "description": "This ReactJS application Front-End will integrate with the Back-End to offer the user form and interface needed to consume the Weather API's services",
   "dependencies": {
     "axios": "^0.19.2",
     "crypto": "^1.0.1",
